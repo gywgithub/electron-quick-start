@@ -17,7 +17,7 @@ function createWindow () {
   win.setBrowserView(view)
   view.setBounds({ x: 0, y: 0, width: 800, height: 580 })
   view.setAutoResize({width: true, height: true})
-  view.webContents.loadURL('http://192.168.199.172:8000/app?token=123')
+  view.webContents.loadURL('https://www.baidu.com')
 }
 
 // This method will be called when Electron has finished
@@ -27,7 +27,6 @@ app.on('ready', createWindow)
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
-  console.log(333)
   // On macOS it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
   if (process.platform !== 'darwin') app.quit()
